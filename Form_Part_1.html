@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<h1>Please Enter Your Details For Our Website!</h1>
+		<fieldset>
+			<legend>Your General Details</legend>
+			<label for="name">Name:</label> 
+			<input id="name" type="text" name="name" value="" required >	 <br>
+			
+			Gender: 
+			<input id="female" type="radio" name="gender" value="f" checked="checked" >
+			<label for="female">Female:</label> 
+			<input id="male" type="radio" name="gender" value="m"> 
+			<label for="male">Male:</label> <br>
+			
+			<label for="age">Age:</label> 
+			<input id="age" name="age" type="number" min="1" max="115" required>	 <br>
+			
+			<label for="date">Date:</label> 
+			<input id="date" name="date" type="date" >	 <br>
+			
+			<label for="favorite_color">Favorite color:</label> 
+			<input id="favorite_color" name="favorite_color" type="color" >	 <br>
+			
+			<label for="which_country">Which country:</label> 
+			<select id="which_country" name="which_country">
+				<option>no selection</option>
+				<option>bkk</option>
+				<option>nida</option>
+				<option>rama 1</option>
+				<option>rama 2</option>
+				<option>rama 3</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<label for="height_short">Height: Short</label> 
+			<input id="height_short" name="height_short" type="range" min="0" max="100">Tall	 <br>
+			
+			<label for="salary_poor">Salary: Poor</label> 
+			<input id="salary_poor" name="salary_poor" type="range" min="0" max="100">Rich	 <br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label for="email">Email:</label> 
+			<input id="email" name="email" type="email" required>	 <br>
+			
+			<label for="mobile">Mobile:</label> 
+			<input id="mobile" name="mobile" type="tel" >	 <br>
+			
+			<label for="address">Address:</label> 
+			<textarea id="address" name="address"></textarea>	 <br>
+			
+			<label >Modthod to contact you:</label> 
+			
+			<input id="label_email" name="label_email" type="checkbox" >	 
+			<label for="label_email">Email</label> 
+			<input id="label_whatsapp" name="label_whatsapp" type="checkbox" >	
+			<label for="label_whatsapp">Whatsapp</label> 
+			<input id="label_in_app_chat" name="label_in_app_chat" type="checkbox" >	 
+			<label for="label_in_app_chat">In-app chat</label> 
+			
+			
+			
+		</fieldset>
+		
+		<input type = "submit" value = "Submit Form">
+		<input type = "reset" value = "Reset Form"> 
+	</form>
+
+</body>
+</html>
