@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+      .txt-not-found{
+        text-align: center;
+        color: #585858;
+      }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Web Technology Homework</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+		<li>
+          <a href="#lab1" >Lab 1 </a>
+        </li>
+        <li>
+          <a href="#lab2" >Lab 2 </a>
+        </li>
+        <li>
+          <a href="#lab3" >Lab 3 </a>
+        </li>
+        <li>
+          <a href="#lab4" >Lab 4 </a>
+        </li>
+        <li>
+          <a href="#lab5" >Lab 5 </a>
+        </li>
+        <li>
+          <a href="#lab6" >Lab 6 </a>
+        </li>
+        <li>
+          <a href="#lab7" >Lab 7 </a>
+        </li>
+        <li>
+          <a href="#lab8" >Lab 8 </a>
+        </li>
+        <li>
+          <a href="#lab9" >Lab 9 </a>
+        </li>
+        <li>
+          <a href="#lab10" >Lab 10 </a>
+        </li>
+        <li>
+          <a href="#lab11" >Lab 11 </a>
+        </li>
+         <li>
+          <a href="#lab12" >Lab 12 </a>
+        </li>
+         <li>
+          <a href="#lab13" >Lab 13 </a>
+        </li>
+         <li>
+          <a href="#lab14" >Lab 14 </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/MrDynamic/web-homework">Source Code</a></li>        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-8">
+            <div class="adv-table">
+            <div class="space15"></div>       
+		</div>
+    </div>
+</div>
+<div class="row">
+	<div class="col-md-offset-3 col-md-8">
+		<div class="adv-table">
+		<div class="space15"></div>
+			
+		</div>
+	</div>
+</div>
+   <div class="row">
+     <div class="col-md-offset-3 col-md-6">
+           <div class="adv-table">
+                  <div class="space15" style="margin:50px !important;"></div>
+                  <h3 id="lab1">Lab 1</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 1
+s = "The quick brown fox jumps over the lazy dog"
+# 1.1
+puts s.reverse
+# 1.2
+puts s.split.map(&:capitalize).join(' ')
+# 1.3
+puts s.size
+# 1.4
+puts s[0..10]
+# 1.5
+puts s[0..20]
+# 1.6
+s[5] = 'aaa'
+puts s
+                                
+                          </pre>
+                  </div>
+                  <h3 id="lab2">Lab 2</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+puts "Hi,My name is wit!"
+print "Please enter your name:"
+name = gets.chomp
+puts "Say ,hi #{name}"
+puts "Answer question ?"
+question = gets.chomp
+if question=="How old are you?"
+  puts "25 years old"
+elsif question=="Where do you live?"
+ puts "bangkok"
+elsif question=="What is your job?"
+ puts "programmer"
+end
+                          </pre>
+                  </div>
+                  <h3 id="lab3">Lab 3</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 3.1
+arr = ['a','b','c','d','e','f']
+arr[2]
+# 3.2
+arr[0,1]
+
+# 3.3
+arr.last
+
+# 3.4
+arr.delete('c')
+
+# 3.5
+arr[0] = 'abcdefghijklmnopqest'
+
+# 3.6
+arr.push('g')
+                          </pre>
+                  </div>
+                  <h3 id="lab4">Lab 4</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 4.1
+arr = eval (1..100).to_a.join('+')
+
+# 4.2
+arr = ('0'..'10').to_a
+
+print arr
+
+puts
+arr.delete(arr.first)
+print arr
+puts
+arr.delete(arr.first)
+print arr
+puts
+arr.delete(arr.first)
+print arr
+puts
+arr.delete(arr.first)
+print arr
+
+                          </pre>
+                  </div>
+                  <h3 id="lab5">Lab 5</h3>
+                  <div >
+                          <pre class="brush: ruby;">
+# 5.1
+puts ('a'..'k').to_a
+
+# 5.2
+puts ('7'..'140').to_a
+
+                          </pre>
+                  </div>
+                   <h3 id="lab6">Lab 6</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 6.1
+list = {"wit"=>100,"a"=>200,"b"=>300}
+have_car = 200
+list.each {|key, value|
+puts "#{key} is #{value}" 
+}
+
+# 6.2
+list.each {|key, value|
+puts "#{key} have #{value-have_car}" 
+}
+
+                          </pre>
+                  </div>
+                  <h3 id="lab7">Lab 7</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 7.1
+users = [{"a":{"name":"wit","email":"suwitpongk@gmail.com","address":"bkk"}},{"b":{"name":"bbbb","email":"bb@gmail.com","address":"nida"}}]
+
+users.each { |a|
+a.each {|key, value|
+value.each {|key, value| 
+if key.to_s =="email"
+ puts value
+ end
+}
+}
+}
+
+# 7.2
+users.each { |a|
+a.each {|key, value|
+value.each {|key, value| 
+if key.to_s =="name" && value.to_s =="wit"
+ puts value
+ end
+}
+}
+}
+
+                          </pre>
+                  </div>
+                  <h3 id="lab8">Lab 8</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 8.1
+class Example
+
+  attr_accessor :int_1 , :int_2
+  
+    def initialize(int_1,int_2)
+      @int_1 = int_1
+      @int_2 = int_2
+    end
+    
+  def divide
+      int_1.to_i/int_2.to_i
+  end
+  
+
+  
+end
+
+divide_int = Example.new(10,10)
+
+puts divide_int.divide
+
+
+                          </pre>
+                  </div>
+                  <h3 id="lab9">Lab 9</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 9
+class Examples
+
+  attr_accessor :int_1 , :int_2, :int_3, :int_4
+  
+    
+     def initialize(int_1,int_2,int_3,int_4)
+      @int_1 = int_1
+      @int_2 = int_2
+      @int_3 = int_3
+      @int_4 = int_4
+    end
+    
+  def add
+      int_1.to_i+int_2.to_i
+  end
+    
+  def multiply
+      int_1.to_i*int_2.to_i*int_3.to_i
+  end
+  
+  def interpolated
+      "The temperature outside is #{int_4}"
+  end
+  
+  def temperature
+    if int_4.to_i > 30
+      "it's hot"
+    else
+       "it's cool"
+    end
+
+  end
+
+end
+
+divide_int = Examples.new(10,10,0,0)
+
+puts  divide_int.add
+
+divide_int2 = Examples.new(10,10,10,40)
+
+puts  divide_int2.multiply
+puts  divide_int2.interpolated
+puts  divide_int2.temperature
+
+                          </pre>
+                  </div>
+                  <h3 id="lab10">Lab 10</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 10
+class Examples
+
+  attr_accessor :int_1 , :int_2
+  
+    
+     def initialize(int_1,int_2)
+      @int_1 = int_1
+      @int_2 = int_2
+
+    end
+    
+  def Add
+     sprintf "%.2f",  int_1.to_i+int_2.to_i
+  end
+  
+  def Subtract
+    sprintf "%.2f",   int_1.to_i-int_2.to_i
+  end
+    
+  def Divide
+    sprintf "%.2f",  int_1.to_i/int_2.to_i
+  end
+  
+  def Multiply
+     sprintf "%.2f",  int_1.to_i*int_2.to_i
+  end
+  
+  def Power
+      sprintf "%.2f", (int_1.to_i^int_2.to_i)
+  end
+  
+
+
+
+end
+
+divide_int = Examples.new(10,10)
+
+puts  divide_int.Add
+puts  divide_int.Subtract
+puts  divide_int.Divide
+puts  divide_int.Multiply
+puts  divide_int.Power
+
+                          </pre>
+                  </div>
+                  <h3 id="lab11">Lab 11</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 11
+class Examples
+
+  attr_accessor :int_1 , :int_2
+  
+    
+     def initialize(int_1,int_2)
+      @int_1 = int_1
+      @int_2 = int_2
+
+    end
+    
+  def between
+     int_1.to_f ==int_2.to_f
+  end
+  
+ 
+  
+
+
+
+end
+
+divide_int = Examples.new(10.1,10.1)
+
+puts  divide_int.between
+
+
+                          </pre>
+                  </div>
+                  <h3 id="lab12">Lab 12</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 12
+class Examples
+
+  attr_accessor :int_1 , :int_2
+  
+    
+     def initialize(int_1)
+      @int_1 = int_1
+
+    end
+    
+  def sort_desc
+    int_1.sort_by {|k,v| k}.reverse 
+  end
+  
+ 
+  
+
+
+
+end
+
+h = { "a" => 20, "b" => 30, "c" => 10 }
+divide_int = Examples.new(h)
+
+puts  divide_int.sort_desc
+
+
+                          </pre>
+                  </div>
+                  <h3 id="lab13">Lab 13</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 13
+class Examples
+
+  attr_accessor :name , :email, :age
+  
+    
+  def initialize(name,email,age)
+      @name = name
+      @email = email
+      @age = age
+  end
+    
+  def celebrate
+      @age = age.to_i+1
+     "Happy Birthday"
+  end
+  
+  def print
+     
+     "name = #{name} , email = #{email} , age #{age}"
+  end
+  
+ 
+  
+
+
+
+end
+
+data = Examples.new("wit","suwitpongk@gmail.com",25)
+
+puts  data.print
+puts  data.celebrate
+puts  data.print
+
+
+                          </pre>
+                  </div>
+                  <h3 id="lab14">Lab 14</h3>
+                  <div>
+                          <pre class="brush: ruby;">
+# 14
+class Examples
+
+  attr_accessor :name , :email, :age
+  
+    
+  def initialize(name,email,age)
+      @name = name
+      @email = email
+      @age = age
+  end
+    
+  def celebrate
+      @age = age.to_i+1
+     "Happy Birthday"
+  end
+  
+  def print
+     
+     "name = #{name} , email = #{email} , age #{age}"
+  end
+  
+ 
+  
+end
+
+data = Examples.new("wit","suwitpongk@gmail.com",25)
+
+puts  data.print
+puts  data.celebrate
+puts  data.print
+
+
+                          </pre>
+                  </div>
+              </div>
+            </div>
+       </div>
+   </div>
+   
+ </div>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/shCore.js"></script>
+<script type="text/javascript" src="scripts/shBrushBash.js"></script>
+<script type="text/javascript" src="scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="scripts/shBrushGroovy.js"></script>
+<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+<script type="text/javascript" src="scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="scripts/shBrushVb.js"></script>
+<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="styles/shThemeDefault.css"/>
+<script type="text/javascript">
+	SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript">
+    function showContent(page){
+        $("#content").load(page);
+    }
+</script>
+</body>
+</html>
